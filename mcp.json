@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "algobharat-rural-credit-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "Algorand",
+        "PROJECT_TICKER": "ABRURAL"
+      },
+      "tools": [
+        {
+          "name": "verify_abrural_invariants",
+          "description": "Verifies deterministic invariants for AlgoBharat Rural Credit AI on Algorand."
+        },
+        {
+          "name": "execute_abrural_action",
+          "description": "Executes authenticated DeFi state transition."
+        }
+      ]
+    }
+  }
+}
